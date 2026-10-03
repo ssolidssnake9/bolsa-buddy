@@ -75,5 +75,10 @@ def main():
     return 0
 
 
+def test_smoke():
+    """pytest entry point: the smoke suite doubles as the CI test."""
+    assert main() == 0
+
+
 if __name__ == "__main__":
     sys.exit(main())
