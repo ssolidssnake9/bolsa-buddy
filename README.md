@@ -1,6 +1,22 @@
 # BolsaBuddy
 
+![CI](https://github.com/ssolidssnake9/bolsa-buddy/actions/workflows/ci.yml/badge.svg)
+
 A $0, fully-local tracker for the Mexican stock market (IPC index). Built for a friend who wanted an investing tool for the BMV — no paid data feeds, no cloud AI, nothing leaves the laptop.
+
+## What it looks like
+
+![BolsaBuddy daily report, phone view](docs/screenshot-phone.png)
+
+Sample daily brief (auto-generated, no model needed):
+
+> IPC daily brief (2026-10-01) — auto-generated without the AI model:
+>
+> The Mexican IPC index closed at 63,828.6 on 2026-10-01, -0.60% on the day. It is down 3 days in a row. It sits -11.49% below its 52-week high of 72,111.41. Close is below the 20-day moving average (64,377.02). Close is below the 50-day moving average (65,248.02). Close is below the 200-day moving average (67,215.54).
+>
+> No investment advice. Data: Yahoo Finance free daily feed (^MXX).
+
+Evidence it works: `python3 test_smoke.py` runs the full pipeline offline on cached data (green in CI on every push — see the badge up top).
 
 ## What it does
 
